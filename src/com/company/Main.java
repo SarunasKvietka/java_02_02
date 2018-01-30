@@ -10,11 +10,12 @@ public class Main {
         float atstumas = sc.nextFloat();
         System.out.println("iveskite sunaudota degalu kieki");
         float kiekis = sc.nextFloat();
-        float vidurkis = (kiekis * 100)/atstumas;
-        System.out.println("jusu kuro sanaudos100"+ vidurkis);
 
+        System.out.println("jusu kuro sanaudos 100km: "+ vidurkis(kiekis,atstumas));
 
-
+    }
+    public static float vidurkis(float a, float b){
+        return (a*100)/b;
     }
 }
 
