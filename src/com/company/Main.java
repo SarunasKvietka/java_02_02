@@ -12,17 +12,31 @@ public class Main {
         int sk2 = sc.nextInt();
         int suma = sk1 + sk2;
         int skirtumas = sk1 - sk2;
-        System.out.println("suma=" + suma);
+        System.out.println("suma=" + suma(sk1, sk2));
+        System.out.println("suma=" + suma ((float)sk1, (float) sk2));
+        System.out.println("skirtumas=" + skirtumas);
         System.out.println("skirtumas=" + skirtumas);
 
     }
 
-    public static int suma(int sk1, int sk2){
-        return sk1+sk2;
+    public static int suma(int sk1, int sk2) {
+        return sk1 + sk2;
     }
-public static int skirtumas(int sk1, int sk2){
-        return sk1-sk2;
-}
+
+    public static float suma(float sk1, float sk2) {
+        return sk1 + sk2;
+    }
+
+    ;
+
+    public static int skirtumas(int sk1, int sk2) {
+        return sk1 - sk2;
+    }
+
+    public static float skirtumas(float sk1, float sk2) {
+        return sk1 - sk2;
+    }
+
     {
 
 
