@@ -12,6 +12,9 @@ public class Main {
         float ugis = sc.nextFloat();
         float Kmi = svoris / (ugis * ugis);
         System.out.println("jusu indeksas" + Kmi);
+        }
+        public static float Kmi(float a, float b){
+        return b/(a*a);
     }
 }
 
