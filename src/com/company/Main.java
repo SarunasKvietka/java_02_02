@@ -5,17 +5,21 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("iveskite nuvaziuota atstuma");
-        Scanner sc = new Scanner(System.in);
-        float atstumas = sc.nextFloat();
-        System.out.println("iveskite sunaudota degalu kieki");
-        float kiekis = sc.nextFloat();
 
-        System.out.println("jusu kuro sanaudos 100km: "+ vidurkis(kiekis,atstumas));
-
+        ivedimas();
+        System.out.println("suma " + skaiciuotuvas.suma(a, b));
+        System.out.println("skirtumas " + skaiciuotuvas.skirtumas(a, b));
+        System.out.println("sandauga " + skaiciuotuvas.sandauga(a, b));
     }
-    public static float vidurkis(float a, float b){
-        return (a*100)/b;
+    static float a;
+    static float b;
+
+    public static void ivedimas(){
+        System.out.println("iveskite du skaicius");
+        Scanner sc = new Scanner(System.in);
+        a= sc.nextFloat();
+        b= sc.nextFloat();
+
     }
 }
 
